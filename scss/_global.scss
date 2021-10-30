@@ -1,0 +1,35 @@
+@import "vars";
+.wrapper {
+  max-width: 1580px;
+  margin: 0 auto;
+  background-color: $dark-color;
+}
+.container {
+  max-width: 1520px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.btn {
+  display: inline-block;
+  font-size: 17px;
+  color: #ffffff;
+  line-height: 147%;
+  max-width: 180px;
+  &-small {
+    border: 1px solid #ffffff;
+    padding: 13.5px 46px;
+  }
+  &-large {
+    border: 1px solid #ffffff;
+    padding: 20px 40px;
+  }
+  &-filled {
+    background-color: $primary-color;
+    border: none;
+  }
+  &-left {
+    position: absolute;
+    left: 0;
+    bottom: 75.5px;
+  }
+}

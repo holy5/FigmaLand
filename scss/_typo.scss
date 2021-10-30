@@ -1,0 +1,17 @@
+body {
+  font-family: $font;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  background-color: $dark-color;
+}
+.global-heading {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 110%;
+}
+.global-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
