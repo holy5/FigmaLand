@@ -36,7 +36,6 @@
     bottom: 0;
     top: 0;
     right: 0;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     width: 200px;
     flex-direction: column;
     z-index: 5;
@@ -46,6 +45,7 @@
     transition: all 0.2s linear;
     &.is-active {
       transform: translateX(0);
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
     &-item {
       display: block;
@@ -58,7 +58,7 @@
     &-close {
       display: none;
       position: fixed;
-      right: 0px;
+      right: 10px;
       top: 0px;
       padding: 10px;
       z-index: 6;

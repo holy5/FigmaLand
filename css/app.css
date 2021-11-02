@@ -149,7 +149,6 @@ body {
     bottom: 0;
     top: 0;
     right: 0;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     width: 200px;
     flex-direction: column;
     z-index: 5;
@@ -160,6 +159,7 @@ body {
   }
   .menu.is-active {
     transform: translateX(0);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   .menu-item {
     display: block;
@@ -172,7 +172,7 @@ body {
   .menu-close {
     display: none;
     position: fixed;
-    right: 0px;
+    right: 10px;
     top: 0px;
     padding: 10px;
     z-index: 6;
