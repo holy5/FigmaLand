@@ -21,12 +21,51 @@
       color: #fff;
     }
   }
+  &-toggle {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+  }
 }
 @media screen and (max-width: 767px) {
   .header {
     margin-top: 15px;
   }
   .menu {
-    display: none;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 200px;
+    flex-direction: column;
+    z-index: 5;
+    background-color: rgb(47, 46, 46);
+    justify-content: stretch;
+    transform: translateX(100%);
+    transition: all 0.2s linear;
+    &.is-active {
+      transform: translateX(0);
+    }
+    &-item {
+      display: block;
+      padding: 15px;
+    }
+    &-toggle {
+      display: inline-block;
+      margin-left: 20px;
+    }
+    &-close {
+      display: none;
+      position: fixed;
+      right: 0px;
+      top: 0px;
+      padding: 10px;
+      z-index: 6;
+      font-size: 25px;
+      &.is-active {
+        display: inline-block;
+      }
+    }
   }
 }

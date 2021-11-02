@@ -133,6 +133,11 @@ body {
 .menu-item a {
   color: #fff;
 }
+.menu-toggle {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 767px) {
   .header {
@@ -140,7 +145,41 @@ body {
   }
 
   .menu {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 200px;
+    flex-direction: column;
+    z-index: 5;
+    background-color: #2f2e2e;
+    justify-content: stretch;
+    transform: translateX(100%);
+    transition: all 0.2s linear;
+  }
+  .menu.is-active {
+    transform: translateX(0);
+  }
+  .menu-item {
+    display: block;
+    padding: 15px;
+  }
+  .menu-toggle {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .menu-close {
     display: none;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    padding: 10px;
+    z-index: 6;
+    font-size: 25px;
+  }
+  .menu-close.is-active {
+    display: inline-block;
   }
 }
 .hero {
