@@ -1,11 +1,13 @@
 @import "vars";
 .wrapper {
-  max-width: 1580px;
+  max-width: 100%;
+  width: 1580px;
   margin: 0 auto;
   background-color: $dark-color;
 }
 .container {
-  max-width: 1520px;
+  max-width: 100%;
+  width: 1520px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -31,5 +33,16 @@
     position: absolute;
     left: 0;
     bottom: 75.5px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .btn {
+    font-size: 15px;
+    &-small {
+      padding: 10px 40px;
+    }
+    &-large {
+      padding: 12px 40px;
+    }
   }
 }

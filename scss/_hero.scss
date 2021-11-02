@@ -30,3 +30,24 @@
     margin-bottom: 100px;
   }
 }
+@media screen and (max-width: 767px) {
+  .hero {
+    &-title {
+      font-size: 52px;
+      margin-bottom: 17px;
+    }
+    &-desc {
+      font-size: 20px;
+      padding: 0 10px;
+      text-align: center;
+      margin-bottom: 57px;
+    }
+    &-btn {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 21px 0;
+      margin-bottom: 57px;
+    }
+  }
+}

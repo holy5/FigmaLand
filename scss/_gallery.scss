@@ -36,6 +36,14 @@
     display: block;
     border-radius: 12px;
     height: 285px;
-    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    // box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+  }
+}
+@media screen and (max-width: 767px) {
+  .gallery {
+    &-img-wrapper {
+      grid-template-columns: 1fr;
+      max-width: 100%;
+    }
   }
 }

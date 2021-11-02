@@ -45,3 +45,25 @@
     line-height: 150%;
   }
 }
+@media screen and (max-width: 767px) {
+  .testimonial {
+    &-content {
+      grid-template-columns: 1fr;
+      gap: 23px;
+      margin: 0 20px;
+    }
+    &-desc {
+      font-size: 16px;
+    }
+  }
+  .user {
+    &-avt {
+      width: 50px;
+      height: 50px;
+      border-radius: 100rem;
+    }
+    &-info {
+      font-size: 16px;
+    }
+  }
+}

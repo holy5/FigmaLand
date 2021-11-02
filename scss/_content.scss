@@ -26,9 +26,8 @@
     margin-bottom: 44px;
   }
   &-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0 33px;
+    display: flex;
+    gap: 33px;
     max-width: 985px;
   }
   &-item {
@@ -61,6 +60,19 @@
       display: block;
       padding-bottom: 40px;
       margin: 0 auto;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .content {
+    &-list {
+      flex-direction: column;
+    }
+    &-content {
+      &-desc {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
     }
   }
 }
