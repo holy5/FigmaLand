@@ -133,7 +133,7 @@ body {
 .menu-item a {
   color: #fff;
 }
-.menu-toggle {
+.menu-close, .menu-toggle {
   display: none;
   font-size: 25px;
   cursor: pointer;
